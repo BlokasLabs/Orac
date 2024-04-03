@@ -1,12 +1,12 @@
 #/bin/sh
-mkdir -p pkg/patchbox
-rm -rf pkg/patchbox.old
-mv pkg/patchbox pkg/patchbox.old
-mkdir -p pkg/patchbox
-cd pkg/patchbox
+mkdir -p pkg/patchbox$1
+rm -rf pkg/patchbox$1.old
+mv pkg/patchbox$1 pkg/patchbox$1.old
+mkdir -p pkg/patchbox$1
+cd pkg/patchbox$1
 cp -R ../../Core/* .
-cp -R ../../PI/* .
-cp -R ../../patchbox/* .
+cp -LR ../../PI$1/* .
+cp -LR ../../patchbox$1/* .
 
 if [ "$NOPACK" ] ; 
 then

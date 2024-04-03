@@ -1,11 +1,11 @@
 #/bin/sh
-mkdir -p pkg/pi
-rm -rf pkg/pi.old
-mv pkg/pi pkg/pi.old
-mkdir -p pkg/pi
-cd pkg/pi
+mkdir -p pkg/pi$1
+rm -rf pkg/pi$1.old
+mv pkg/pi$1 pkg/pi$1.old
+mkdir -p pkg/pi$1
+cd pkg/pi$1
 cp -R ../../Core/* .
-cp -R ../../PI/* .
+cp -LR ../../PI$1/* .
 
 
 if [ "$NOPACK" ] ; 

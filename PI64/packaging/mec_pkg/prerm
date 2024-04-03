@@ -1,2 +1,1 @@
-systemctl stop mec
-systemctl disable mec
+../../../PI/packaging/mec_pkg/prerm

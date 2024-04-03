@@ -1,2 +1,1 @@
-systemctl stop orac
-systemctl disable orac
+../../../PI/packaging/orac_pkg/prerm

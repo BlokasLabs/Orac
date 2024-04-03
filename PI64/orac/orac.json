@@ -1,0 +1,5 @@
+{
+	"dataDir":	"/home/pi/data/orac",
+	"mediaDir":	"/home/pi/media",
+	"userModuleDir":	"/home/pi/media/orac/usermodules"
+}
